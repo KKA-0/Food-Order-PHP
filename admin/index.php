@@ -1,23 +1,40 @@
-<html>
-    <head>
-        <title> Food Order Website - Home Page</title>
-    </head>
-
-    <body>
-        <h1> Admin Panel </h1>
-
-    <!-- Mean Section Starts -->
-    <div class="menu">
-        Menu Goes Here
-
-    </div>
+<?php include('partials/menu.php'); ?>
 
 
     <!-- Mean Section End -->
 
     <!-- Mean Content Starts -->
     <div class="main-content">
-        Menu Content Goes Here
+        <div class="wrapper">
+            <h1> DASHBOARD </h1>
+
+            <div class="col-4 text-center">
+                <h1>5</h1>
+                <br> </br>
+                Categaries
+            </div>
+            <div class="col-4 text-center">
+                <h1>5</h1>
+                <br> </br>
+                Categaries
+            </div>
+            <div class="col-4 text-center">
+                <h1>5</h1>
+                <br> </br>
+                Categaries
+            </div>
+            <div class="col-4 text-center">
+                <h1>5</h1>
+                <br> </br>
+                Categaries
+            </div>
+            <div class="col-4 text-center">
+                <h1>5</h1>
+                <br> </br>
+                Categaries
+            </div>
+        <div class="clearfix"></div>
+        
         
     </div>
 
@@ -25,14 +42,5 @@
     <!-- Mean Content End -->
 
     <!-- Mean Footer Starts -->
-    Footer Goes Here
-    <div class="Footer">
-        
-    </div>
-
-
-    <!-- Mean Footer End -->
-
-    </body>
     
-</html>
+    <?php include('partials/footer.php'); ?>
