@@ -36,8 +36,7 @@
 
                 <tr>
                 <td colspan="2">
-                    <input type="submit" name="submit" value="Add Admin" class= "btn-secondary"
-                </td>
+                    <input type="submit" name="submit" value="Add Admin" class= "btn-secondary"></td>
                 </tr>
             </table>
         </form>
@@ -89,4 +88,4 @@
 
 
      }
-    
+    ?>

@@ -14,6 +14,13 @@
                     echo $_SESSION['add'];//displaying session message
                     unset($_SESSION['add']);//Removing session messsage
                 }
+                if(isset($_SESSION['delete']))
+                {
+                    echo $_SESSION['delete'];
+                    unset($_SESSION['delete']);
+                }
+                
+                
             ?>
 
 
@@ -62,12 +69,12 @@
                                 //display the value in our table
                                 ?>
                                 <tr>
-                                <td><?php echo $sn++; ?></td>
+                                <td><?php echo $sn++; ?>. </td>
                                 <td><?php echo $full_name; ?></td>
                                 <td><?php echo $username; ?></td>
                                 <td>
-                                    <a href="#" class="btn-secondary">Update Admin</a>
-                                    <a href="<?php echo SITEURL; ?>admin/delete-admin.php" class="btn-danger">Delete admin</a> 
+                                    <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
+                                    <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete admin</a> 
                                 </td>
                                 </tr>      
 
@@ -85,6 +92,7 @@
                         else
                         {
                             //we do not have data in database
+                            
                         }
                     }
 
